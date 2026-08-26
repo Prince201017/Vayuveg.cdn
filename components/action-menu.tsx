@@ -44,7 +44,7 @@ export function ActionMenu({ label = "Actions", children }: { label?: string; ch
 export function MenuItem({ danger, children, ...rest }: React.ButtonHTMLAttributes<HTMLButtonElement> & { danger?: boolean }) {
   return (
     <button
-      type="submit"
+      type="button"
       role="menuitem"
       {...rest}
       className={`flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-left text-[13px] transition-colors ${
