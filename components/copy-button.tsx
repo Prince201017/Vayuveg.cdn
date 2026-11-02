@@ -1,2 +1,0 @@
-"use client"; import { Copy, Check } from "lucide-react"; import { useState } from "react";
-export function CopyButton({value}:{value:string}){const [done,setDone]=useState(false);return <button className="button button-ghost p-2" aria-label="Copy delivery URL" onClick={async()=>{await navigator.clipboard.writeText(value);setDone(true);setTimeout(()=>setDone(false),1500)}}>{done?<Check size={16}/>:<Copy size={16}/>}</button>}
